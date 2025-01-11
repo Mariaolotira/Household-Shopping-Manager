@@ -43,7 +43,7 @@ Household Shopping Manager is a web-based application designed to help families 
 ## 📦 Installation
 
 ### 1. Clone the Repository
-- git clone [https://github.com/yourusername/household-shopping-manager.git](https://github.com/Mariaolotira/Household-Shopping-Manager)
+- git clone https://github.com/Mariaolotira/Household-Shopping-Manager
 - cd household-shopping-manager
 
 ### 2. Database Setup
