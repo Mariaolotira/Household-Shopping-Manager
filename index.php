@@ -141,7 +141,7 @@
             <h2 class="text-center mb-5">About Our System</h2>
             <div class="row">
                 <div class="col-md-6" data-aos="">
-                    <img src="system-illustration.png" alt="System Illustration" class="img-fluid rounded">
+                    <img src="images/th.jpeg" alt="System Illustration" class="img-fluid rounded">
                 </div>
                 <div class="col-md-6" data-aos="">
                     <p>

@@ -50,7 +50,7 @@ unset($_SESSION['error_message']);
                 <div class="col-12 col-md-6 bsb-tpl-bg-platinum">
                     <div class="d-flex flex-column justify-content-between h-100 p-3 p-md-4 p-xl-5">
                         <h3 class="m-0">Welcome!</h3>
-                        <img class="img-fluid rounded mx-auto my-4" loading="lazy" src="./assets/img/bsb-logo.svg" width="245" height="80" alt="BootstrapBrain Logo">
+                        <img class="img-fluid rounded mx-auto my-4" loading="lazy" src="images/logo.jpeg" width="580" height="480" alt="BootstrapBrain Logo">
                         <p class="mb-0">Not a member yet? <a href="#!" class="link-secondary text-decoration-none">Register now</a></p>
                     </div>
                 </div>
