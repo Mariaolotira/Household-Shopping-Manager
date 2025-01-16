@@ -184,7 +184,13 @@
 
     <!-- Footer -->
     <footer class="bg-dark text-center py-3">
-        <p>&copy; 2025 Household Shopping Manager. All Rights Reserved.</p>
+        <p>&copy; 
+            <span id="copyright">
+                <script>
+                    document.getElementById("copyright").innerHTML = new Date().getFullYear();
+                </script>
+            </span>
+        Household Shopping Manager. All Rights Reserved.</p>
         <p>Designed and developed by <a href="#">Mariao Lotira</a></p>
     </footer>
 
