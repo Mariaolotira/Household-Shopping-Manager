@@ -399,6 +399,8 @@ try {
             }
         }
 
+        user/shopping-list.php
+
         /* Dark mode for Bootstrap components */
         .form-control,
         .form-control:focus {

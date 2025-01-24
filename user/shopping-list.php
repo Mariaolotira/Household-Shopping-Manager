@@ -46,7 +46,7 @@ try {
                 i.name, 
                 i.quantity, 
                 u2.name AS added_by,
-                i.created_at
+                i.updated_at
             FROM inventory i
             LEFT JOIN users u2 ON i.added_by = u2.id
             WHERE i.home_id = :home_id 
@@ -282,11 +282,15 @@ try {
             width: 100%;
         }
 
-        .search-container input {
+        /* .search-container input {
             flex-grow: 1;
             background-color: var(--bg-primary);
-            color: var(--text-primary);
+            color: var(--text-primary) !important;
             border: 1px solid var(--accent-primary);
+        } */
+
+        .search-container input ::placeholder {
+            color: var(--text-primary);
         }
 
         /* Table Styles */
@@ -364,11 +368,11 @@ try {
                 width: 100%;
             }
 
-            .search-container input {
+            /* .search-container input {
                 background-color: var(--bg-primary);
                 border: 1px solid var(--accent-primary);
                 color: var(--text-primary);
-            }
+            } */
 
             .search-container .btn {
                 background-color: var(--accent-primary);
@@ -608,7 +612,7 @@ try {
                     <div class="empty-state text-center p-5">
                         <i class="bi bi-box" style="font-size: 4rem; color: var(--text-secondary);"></i>
                         <h2 class="mt-3 mb-2">No Low Stock Items</h2>
-                        <p class="text-muted">All inventory items are well-stocked</p>
+                        <p class="text">All inventory items are well-stocked</p>
                     </div>
                 <?php else: ?>
                     <div class="shopping-list-summary mb-3">
@@ -644,7 +648,7 @@ try {
                                         <span class="h4 mb-0">
                                             <?php
                                             echo $shoppingItems ?
-                                                date('M d', strtotime($shoppingItems[0]['created_at'])) :
+                                                date('M d', strtotime($shoppingItems[0]['updated_at'])) :
                                                 'N/A';
                                             ?>
                                         </span>
@@ -660,7 +664,7 @@ try {
                                 <th scope="col">Item</th>
                                 <th scope="col">Quantity</th>
                                 <th scope="col">Added By</th>
-                                <th scope="col">Date Added</th>
+                                <th scope="col">Date Updated</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -676,7 +680,7 @@ try {
                                         </span>
                                     </td>
                                     <td><?php echo htmlspecialchars($item['added_by'] ?? 'Unknown'); ?></td>
-                                    <td><?php echo date('M d, Y', strtotime($item['created_at'])); ?></td>
+                                    <td><?php echo date('M d, Y', strtotime($item['updated_at'])); ?></td>
                                 </tr>
                             <?php endforeach; ?>
                         </tbody>
