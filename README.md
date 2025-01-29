@@ -47,7 +47,8 @@ Household Shopping Manager is a web-based application designed to help families 
 - cd household-shopping-manager
 
 ### 2. Database Setup
-Create Database Schema
+Create Database Schema if you can't access the sql file inside the project folder.
+Import the housemanager.sql to your database operator and update the connect.php inside the backend folder with the right configurations(it's better if use a .env file for security).
 
 sql
 -- Home Table
